@@ -63,9 +63,10 @@ body {
     font-weight: 700;
 }
 
-.cartao:active .cartao__conteudo {
+.cartao.active .cartao__conteudo {
     transform: rotateY(180deg);
 }
+
 
 .cartao__conteudo__pergunta,
 .cartao__conteudo__resposta {
@@ -97,21 +98,22 @@ footer p {
     margin-top: 0.5rem;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 560px){
 
-    body {
+    body{
         background: url(img/bg-mobile.webp);
     }
 
-    .cartao {
+    .cartao{
         flex: 1 0 calc(100% - 1rem);
     }
 
-    .cartao__conteudo h3 {
+    .cartao__conteudo h3{
         font-size: 3vw;
     }
 
-    .cartao__conteudo p {
+    .cartao__conteudo p{
         font-size: 3.8vw;
     }
 }
+
